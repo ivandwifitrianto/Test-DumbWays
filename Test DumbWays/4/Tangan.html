@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+	    <title>Tangan</title>
+	</head>
+<body>
+    <section class=" ">
+        <h1>Handshake</h1>
+        <br>
+            <label>
+            <input type="number" name="angka" id="angka" required placeholder="Masukkan jumlah orang">
+           <input type="button" onclick="count_handshake()" value="Cetak">
+           </label>
+            <div class="keterangan">Result Handshake : 
+             </div>
+             <input type="number" name="angka" id="result" required placeholder="0" readonly>
+    </section>
+</body>
+<script type="text/javascript">
+function count_handshake() {
+    var v1 = document.getElementById('angka').value;
+    var i=0;
+    var t=0;
+    for(i;i<v1;i++){
+        t +=i;
+    }
+   console.log(t);
+    var print = document.getElementById('result');
+    print.value = t;
+}
+</script>
+</html>

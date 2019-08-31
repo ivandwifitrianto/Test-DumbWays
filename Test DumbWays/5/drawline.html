@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+	    <title>DrawLine</title>
+	</head>
+<body>
+        <h1>Draw Line</h1>
+        <br>
+            <label>
+                <input type="number" name="angka" id="angka" required placeholder="Masukkan jumlah line, ex: 11">
+                <input type="button" onclick="drawLine()" value="Cetak">
+            </label>
+            <pre class="keterangan" id="result" style="background-color:white;color: black;">Result Line :
+</pre>
+    </section>
+</body>
+<script type="text/javascript">
+function drawLine() {
+    var v1 = document.getElementById('angka').value;
+    var v2 = v1;
+    var i=0, t="";
+    var print = document.getElementById('result');
+    print.innerHTML ="";
+    var sp="        *";
+    // print.innerHTML +=  sp.substr(1,8);
+    // console.log("*");
+    for(i;i<v2;i++){
+        print.innerHTML +=  sp.substr(i)+"\n";
+    }
+}
+</script>
+</html>

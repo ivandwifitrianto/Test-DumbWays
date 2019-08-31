@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Anggota</title>
+    <link rel="stylesheet" href="../1/style.css">
+</head>
+<body>
+    <div class="container clearfix">
+        <h1>Biodata</h1>
+
+        <div class="content">
+            <h3>Tambah Data Biodata</h3>
+            <form method="post" action="proses-tambah-biodata.php">
+                <p>Nama Lengkap</p>
+                <p><input type="text" name="nama"></p>
+                <p>Tempat Lahir</p>
+                <p>
+                    <select name="lahir">
+                        <option value="J">Jakarta</option>
+                        <option value="B">Bandung</option>
+                        <option value="P">Palembang</option>
+                        <option value="A">Aceh</option>
+                        <option value="Y">Yogyakarta</option>
+                    </select>
+                </p>
+                <p>No. Telp/Hp</p>
+                <p><input type="text" name="Telp"></p>
+                <p>Alamat</p>
+                <p><textarea name="alamat"></textarea></p>
+                <p>Pendidikan Terakhir</p>
+                <p>
+                    <select name="pdk">
+                        <option value="SD">Sekolah Dasar</option>
+                        <option value="SMP">Sekolah Menengah Pertama</option>
+                        <option value="SMA">Sekolah Menengah Atas</option>
+                        <option value="SMK">Sekolah Menengah Kejuruan</option>
+                        <option value="PT">Perguruan Tinggi</option>
+                    </select>
+                </p>
+                <p>Agama</p>
+                    <input type="radio" name="agama" id="islam" value="islam">Islam
+                    <input type="radio" name="agama" id="kristen" value="kristen">Kristen
+                    <input type="radio" name="agama" id="katolik" value="katolik">Katolik
+                <p></p>
+                <p>Hobby</p>
+                    <input type="checkbox" name="hoby[]" id="renang" value="renang">Renang
+                    <input type="checkbox" name="hoby[]" id="mancing" value="mancing">Mancing
+                    <input type="checkbox" name="hoby[]" id="game" value="game">Game
+                    <input type="checkbox" name="hoby[]" id="gibah" value="gibah">Gibah
+                    <input type="checkbox" name="hoby[]" id="programming" value="programming">Programming
+                <p>
+                    <input type="submit" class="btn btn-submit" value="Simpan">
+                    <input type="reset" class="btn btn-submit" value="Edit Label" onclick="self.history.back();">
+                </p>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
